@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGold">#FFDB48</color>
+    <color name="colorGray">#E3E3E3</color>
+    <color name="colorGreen">#37A742</color>
+    <color name="colorFont">#AFAFAF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="status_color">#56abe4</color>
+    <color name="text_gray">#7b403b37</color>
+    <color name="default_line_color">#e6e6e6</color>
+    <color name="list_item_focus">#0a000000</color>
+    <color name="white_alpha_percent_45">#73ffffff</color>
+    <color name="light_black_color">#3B3B3B</color>
+
+
+
+    <color name="topbar_bottom_drive">#e3e3e3</color><!--顶部Bar的底部分割线-->
+    <color name="topbar_center_send_bg">#e7e7e7</color>
+    <!--发送微博界面 -->
+    <color name="post_hint">#808080</color>
+    <color name="post_text">#333333</color>
+    <color name="post_bottomBar_bg">#f9f9f9</color>
+
+    <color name="light_gray">#ededed</color>
+
+    <color name="retweet_weibo_bg">#f7f7f7</color>
+    <color name="retweet_weibo_author">#313131</color>
+    <color name="retweet_weibo_text">#909090</color>
+
+    <!-- 发送按钮在普通状态下，不可点击 -->
+    <color name="normal_send_button_bg">#FFFFFF</color>
+    <color name="normal_send_button_stoke">#d8d8d8</color>
+    <color name="normal_send_button_text">#b5b5b5</color>
+
+    <!-- 发送按钮在按压状态下 -->
+    <color name="press_send_button_bg">#df7500</color>
+    <color name="press_send_button_stoke">#df7500</color>
+    <color name="press_send_button_text">#ffecd3</color>
+
+    <!-- 发送按钮在可以点击的状态下 -->
+    <color name="highlight_send_button_bg">#fe8300</color>
+    <color name="highlight_send_button_stoke">#fe8300</color>
+    <color name="highlight_send_button_text">#fbffff</color>
+
+    <color name="cancel_text">#494949</color><!--取消按钮文本颜色 -->
+    <color name="middle_send_text">#505050</color><!--topbar中间区域 发微博文本颜色 -->
+    <color name="middle_username_text">#b4b4b4</color><!--topbar中间区域 用户名文本颜色 -->
+
+
+    <color name="create_weibo_input_text">#FFFFFF</color>
+    <color name="create_weibo_input_hint">#454648</color>
+    <color name="limittext_text_warning">#929292</color>
+    <color name="limittext_text_outofrange">#e03f22</color>
+</resources>

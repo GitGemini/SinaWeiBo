@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-- 用户图标 -->
+        <com.henu.sinaweibo.Models.RoundImageView
+            android:id="@+id/wbicon"
+            android:layout_alignParentLeft="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"/>
+        <!-- 用户昵称 -->
+        <TextView
+            android:id="@+id/wbuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#e7861f"
+            android:layout_toRightOf="@+id/wbicon"
+            android:layout_marginTop="4dp"/>
+        <!-- 发布时间 -->
+        <TextView
+            android:id="@+id/wbtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wbuser"
+            android:layout_toRightOf="@+id/wbicon"
+            android:textColor="#f7a200"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+    <!-- 正文 -->
+    <TextView
+        android:id="@+id/wbtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#424952"
+        android:textSize="16sp"/>
+    <!-- 是否包含图片 -->
+<!--    <ImageView
+        android:id="@+id/wbimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>-->
+    <GridLayout
+        android:id="@+id/gridLaout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/repostsLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/picture_retweet" />
+            <TextView
+                android:id="@+id/repostsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="45"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/commentsLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/picture_comment" />
+            <TextView
+                android:id="@+id/commentsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="23"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/attitudesLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/attitudesIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/picture_unlike" />
+            <TextView
+                android:id="@+id/attitudesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="12"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.henu.sinaweibo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--<uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".AppConfig.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/weibo_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:theme="@style/MyAppTheme">
+        <activity android:name=".LoadActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+        <activity android:name=".WBAuthActivity"></activity>
+        <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"></activity>
+        <activity android:name=".Fragments.ShowUsersActivity"></activity>
+        <activity android:name=".Weibo.ShowDetail"></activity>
+        <activity android:name=".Fragments.WriteWeiBoActivity"></activity>
+        <activity android:name=".Message.ShowMessageActivity"></activity>
+        <activity android:name=".Setting.SettingActivity"></activity>
+        <activity android:name=".Tools.ShowImageAvtivity"></activity>
+        <activity android:name=".Commnet.ShowCommentsActivity"></activity>
+        <activity android:name=".Fragments.ShowStatusActivity"></activity>
+        <activity android:name=".Fragments.ShowUserDetails"></activity>
+    </application>
+</manifest>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/light_gray" android:state_pressed="true" /><!--微博的按压状态下的背景颜色-->
+    <item android:drawable="@color/white" /><!--微博的普通背景颜色-->
+
+</selector>

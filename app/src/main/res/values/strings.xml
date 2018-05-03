@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SinaWeibo</string>
+    <string name="str_search_hint">搜索结果</string>
+
+</resources>

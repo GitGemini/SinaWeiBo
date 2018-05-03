@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+    <!--顶部样式-->
+    <include layout="@layout/toolbar_write_weibo"/>
+    <!--写微博的内容-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/idea_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/idea_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="13dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="分享新鲜事..."
+                android:inputType="textMultiLine"
+                android:minHeight="100dp"
+                android:textColor="@color/post_text"
+                android:textColorHint="@color/post_hint"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_gray"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:text="上传图片" />
+            <LinearLayout
+                android:id="@+id/outframe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/photo_relativelayout"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="23dp"
+                    android:visibility="gone"
+                    />
+
+                <ImageButton
+                    android:id="@+id/imageButton_choose_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/ic_took_photos" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/repost_layout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/write_background_auto"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/repost_img"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/test_img"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/retweet_weibo_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/repost_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center"
+                        android:text="我要发微博啦"
+                        android:textColor="@color/retweet_weibo_author"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/repost_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:lines="2"
+                        android:text="哈哈哈哈，这是我的第一条微博吆，大家都赶紧来点赞"
+                        android:textColor="@color/retweet_weibo_text"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/blankspace"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"/>
+    <TextView
+        android:id="@+id/limitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginRight="10dp"
+        android:text="字数提示信息"
+        android:gravity="center"
+        android:textColor="#e03f22" />
+
+</LinearLayout>
